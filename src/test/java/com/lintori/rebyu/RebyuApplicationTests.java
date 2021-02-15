@@ -1,10 +1,10 @@
-package com.lintori.popcornsapi;
+package com.lintori.rebyu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PopcornsapiApplicationTests {
+class RebyuApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package com.lintori.popcornsapi;
+package com.lintori.rebyu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PopcornsapiApplication {
+public class RebyuApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PopcornsapiApplication.class, args);
+		SpringApplication.run(RebyuApplication.class, args);
 	}
 
 }

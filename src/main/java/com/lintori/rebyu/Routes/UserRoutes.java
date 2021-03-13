@@ -12,7 +12,14 @@ public class UserRoutes {
     @GetMapping()
     public ArrayList<User> getAllUsers() {
         ArrayList<User> allUsers = new ArrayList<>();
-        allUsers.add(new User());
+        allUsers.add(new User(
+                2,
+                "imreyes",
+                "Jorge",
+                "Reyes",
+                "profile picture",
+                "email"
+        ));
         return allUsers;
     }
 
@@ -20,7 +27,14 @@ public class UserRoutes {
     public User getUser(
             @PathVariable(value="id") int requestID
     ) {
-        return new User();
+        return new User(
+                2,
+                "imreyes",
+                "Jorge",
+                "Reyes",
+                "profile picture",
+                "email"
+        );
     }
 
     @PostMapping()

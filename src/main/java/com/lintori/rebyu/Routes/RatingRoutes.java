@@ -12,7 +12,12 @@ public class RatingRoutes {
     @GetMapping()
     public ArrayList<Rating> getAllRatings() {
         ArrayList<Rating> allRatings = new ArrayList<>();
-        allRatings.add(new Rating());
+        allRatings.add(new Rating(
+                1,
+                "movieTitle",
+                5,
+                "Excelente pelicula"
+        ));
         return allRatings;
     }
 
@@ -20,7 +25,12 @@ public class RatingRoutes {
     public Rating getRating(
             @PathVariable(value="id") int requestID
     ) {
-        return new Rating();
+        return new Rating(
+                1,
+                "movieTitle",
+                5,
+                "Excelente pelicula"
+        );
     }
 
     @PostMapping()

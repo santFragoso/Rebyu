@@ -1,44 +1,44 @@
 package com.lintori.rebyu.Routes;
 
-import com.lintori.rebyu.Entities.Movie;
+import com.lintori.rebyu.Entities.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 
 @RestController
-@RequestMapping("/api/movies")
-public class MovieRoute {
+@RequestMapping("/api/users")
+public class UserRoutes {
 
     @GetMapping()
-    public ArrayList<Movie> getAllMovies() {
-        ArrayList<Movie> allMovies = new ArrayList<>();
-        allMovies.add(new Movie());
-        return allMovies;
+    public ArrayList<User> getAllUsers() {
+        ArrayList<User> allUsers = new ArrayList<>();
+        allUsers.add(new User());
+        return allUsers;
     }
 
     @GetMapping("/{id}")
-    public Movie getMovie(
+    public User getUser(
             @PathVariable(value="id") int requestID
     ) {
-        return new Movie();
+        return new User();
     }
 
     @PostMapping()
-    public void postMovie(
-            @RequestBody Movie requestMovie
+    public void postUser(
+            @RequestBody User requestUser
     ) {
 
     }
 
     @PutMapping("/{id}")
-    public void putMovie(
+    public void putUser(
             @PathVariable(value="id") int requestID
     ) {
 
     }
 
     @DeleteMapping("/{id}")
-    public void deleteMovie(
+    public void deleteUser(
             @PathVariable(value="id") int requestID
     ) {
 

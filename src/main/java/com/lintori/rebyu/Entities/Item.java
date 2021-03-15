@@ -2,7 +2,7 @@ package com.lintori.rebyu.Entities;
 
 import com.lintori.rebyu.Generic.Date;
 
-public class Movie {
+public class Item {
 
     private Integer id;
     private String title;
@@ -10,7 +10,7 @@ public class Movie {
     private Date createdAt;
     private Date updatedAt;
 
-    public Movie(Integer id, String title, User addedBy, Date createdAt, Date updatedAt) {
+    public Item(Integer id, String title, User addedBy, Date createdAt, Date updatedAt) {
         this.id = id;
         this.title = title;
         this.addedBy = addedBy;
@@ -59,15 +59,15 @@ public class Movie {
         if (this == compared){
             output = true;
         }
-        if (!(compared instanceof Movie)){
+        if (!(compared instanceof Item)){
             output = false;
         }
-        Movie comparedMovie = (Movie) compared;
-        if (this.id == comparedMovie.getId() &&
-                this.title.equals(comparedMovie.getTitle()) &&
-                this.addedBy.equals(comparedMovie.getAddedBy()) &&
-                this.createdAt.equals(comparedMovie.getCreatedAt()) &&
-                this.updatedAt.equals(comparedMovie.getUpdatedAt())
+        Item comparedItem = (Item) compared;
+        if (this.id == comparedItem.getId() &&
+                this.title.equals(comparedItem.getTitle()) &&
+                this.addedBy.equals(comparedItem.getAddedBy()) &&
+                this.createdAt.equals(comparedItem.getCreatedAt()) &&
+                this.updatedAt.equals(comparedItem.getUpdatedAt())
         ){
             output = true;
         }

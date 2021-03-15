@@ -10,7 +10,7 @@ public class User {
     private String lastname;
     private String profilePicture;
     private String email;
-    private List<Movie> movies;
+    private List<Item> items;
 
     public User(Integer id, String username, String name, String lastname, String profilePicture, String email) {
         this.id = id;
